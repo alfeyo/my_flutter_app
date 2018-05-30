@@ -1,49 +1,10 @@
-// Copyright 2018 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+new import 'package:flutter/widgets.dart';
 
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Hello Rectangle',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Hello Rectangle'),
-        ),
-        body: HelloRectangle(),
-      ),
-    ),
-  );
-}
-
-class HelloRectangle extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: Colors.greenAccent,
-        height: 400.0,
-        width: 300.0,
-        child: Center(
-          child: Text(
-            'man!',
-            style: TextStyle(fontSize: 40.0),
-            textAlign: TextAlign.center,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-
-
-var container = container(
-  color: Colors.purple,
-  width: 300.0,
-  height:400.0,
-  margin: EdgeInsets,all(16.0),
-);
+Center(
+  child: new Container(
+    margin: const EdgeInsets.all(10.0),
+    color: const Color(0xFF00FF00),
+    width: 48.0,
+    height: 48.0,
+  ),
+)
